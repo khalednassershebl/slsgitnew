@@ -1,0 +1,477 @@
+.m {
+    padding: 0 15px 0 6px;
+}
+.n {
+    padding: 0 6px 0 15px;
+}
+.page-header-text {
+    font-size: 0.9rem;
+    color: var(--p-color);
+    font-weight: 700;
+    text-align: right;
+    padding: 0px 5px 20px 0;
+    margin: 0;
+}
+.setting-content-container {
+    .row {
+        margin: 0 -11px 0 -11px;
+    }
+    .setting-tabs {
+        border-radius: 12px;
+        background: var(--navbar-bg);
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-align: right;
+        margin-bottom: 15px;
+        .tab {
+            cursor: pointer;
+            position: relative;
+            border-bottom: 1px solid var(--border-color);
+            padding: 25px 20px 25px 0;
+            svg {
+                fill: $link;
+                height: 18px;
+                line-height: 18px;
+            }
+            .media-body {
+                font-size: .75rem;
+                font-weight: 700;
+                margin-right: 10px;
+                h5 {
+                    font-weight: 700;
+                    font-size: 0.9rem;
+                    color: var(--p-color);
+                }
+                p {
+                    margin: 0;
+                    color: #8f91ac;
+                    width: 75%;
+                }
+            }
+            .toggle-plus {
+                position: absolute;
+                top: 30px;
+                left: 20px;
+                svg {
+                    fill: var(--p-color);
+                    height: 8px;
+                    display: none;
+                }
+                .fadeOut {
+                    display: none;
+                }
+            }
+        }
+        .tab-content {
+            padding: 0 40px 0 0;
+            background-color: var(--body-bg);
+            border-bottom: 1px solid var(--border-color);
+            overflow: hidden;
+            max-height: 0;
+            transition: all 0.5s ease-in-out 0s;
+            ul {
+                a {
+                    text-decoration: none;
+                    color: var(--p-color);
+                    font-weight: 700;
+                    transition: transform .2s ease-in-out, color .1s ease-in-out, margin .2s ease-in-out;
+                    li {
+                        margin: 12px 0 0 12px;
+                        transition: transform .2s ease-in-out, color .1s ease-in-out, margin .2s ease-in-out;
+                        position: relative;
+                        span {
+                            color: #ffffff;
+                            position: absolute;
+                            top: 0;
+                            left: 10px;
+                            background: var(--main-color);
+                            padding: 2px 9px 5px 9px;
+                            border-radius: 12px;
+                            margin: 0;
+                            font-size: 0.6rem;
+                        }
+                    }
+                    &:hover {
+                        color: $link;
+                        li {
+                            margin: 12px 7px 0 12px;
+                        }
+                    }
+                }
+                .active {
+                    color: $link;
+                    li {
+                        margin: 12px 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+.pay-card {
+    background: #FFF;
+    border-radius: 12px;
+    padding: 30px 20px 30px 20px;
+    margin: 0 0 10px 0;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+    cursor: pointer;
+    width: 200px;
+     margin: 0 auto 25px auto;
+    &:hover {
+        .pay-card-content {
+            .icon-parent {
+                transform: translate(0, -5px);
+                svg {
+                    fill: $link;
+                }
+            }
+        }
+    }
+    .pay-soon {
+        position: absolute;
+        top: 12px;
+        left: 25px;
+        background: var(--main-color);
+        border-radius: 12px;
+        padding: 2px 7px 4px 7px;
+        color: #FFF;
+        font-weight: 700;
+        font-size: 0.65rem;
+    }
+    .pay-card-content {
+        .icon-parent {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin: auto;
+            line-height: 50px;
+            transition: all 0.3s ease-in-out;
+            svg {
+                height: 20px;
+                width: 20px;
+                fill: #adafca;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        h6 {
+            margin: 0px 0 5px 0;
+            color: var(--p-color);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        p {
+            margin: 0;
+            font-size: 0.8rem;
+            color: #adafca;
+        }
+    }
+    .soon {
+        position: absolute;
+        top: 16px;
+        left: 0px;
+        @media (max-width: $max-7) {
+            top: 16px;
+            left: 20px;
+        }
+        .text-sticker {
+            font-size: .8rem;
+            height: 32px;
+            padding: 0 14px;
+            border-radius: 200px;
+            background-color: var(--navbar-bg);
+            -webkit-box-shadow: 3px 5px 20px 0 rgba(94, 92, 154, 0.12);
+            box-shadow: 3px 5px 20px 0 rgba(94, 92, 154, 0.12);
+            font-weight: 700;
+            line-height: 32px;
+            .exam-code {
+                color: var(--p-color);
+                letter-spacing: 0.8px;
+            }
+        }
+    }
+    input {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        cursor: pointer;
+    }
+}
+.setting-content {
+    border-radius: 12px;
+    background: #FFF;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-align: right;
+    padding: 40px 40px 30px 40px;
+    @media (max-width: $max-5) {
+        padding: 30px 25px 30px 25px;
+    }
+    h6 {
+        font-size: 0.9rem;
+        color: var(--p-color);
+        font-weight: 700;
+        text-align: right;
+        padding: 0px 5px 20px 0;
+        margin: 0;
+    }
+    width: 100%;
+    position: relative;
+    .form-group {
+        width: 100%;
+        position: relative;
+        margin: 11px 0;
+        label {
+            color: #adafca;
+            font-size: 0.75rem;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            pointer-events: none;
+            display: block;
+            margin: 0 6px 12px 0;
+        }
+        .form-control {
+            height: 45px;
+            padding: 0 18px;
+            background-color: #FFF;
+            border: 1px solid var(--border-color);
+            color: var(--p-color);
+            transition: border-color .2s ease-in-out;
+            width: 100%;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            &:focus {
+                border-color: var(--main-color);
+                box-shadow: none;
+                outline: none;
+            }
+        }
+        select {
+            cursor: pointer;
+        }
+    }
+    .create-account-btn {
+        text-decoration: none;
+        width: 150px;
+        margin: auto;
+        color: #FFF;
+        background-color: #436cff;
+        display: inline-block;
+        height: 45px;
+        border-radius: 6px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 45px;
+        cursor: pointer;
+        margin-top: 15px;
+        @media (max-width: $max-5) {
+            width: 100%;
+        }
+        svg {
+            height: 17px;
+            margin-left: 4px;
+            path {
+                fill: #FFF;
+            }
+        }
+        &:hover {
+            background-color: #436cff;
+        }
+    }
+    .form-check {
+        display: flex;
+        margin: 10px 5px 10px 0;
+        input {
+            background-color: var(--navbar-bg);
+            border: 1px solid var(--border-color);
+            height: 17px;
+            width: 16px;
+            position: unset;
+            margin: 3px 0 0 5px;
+        }
+        p {
+            color: $iconActive;
+            font-size: .875rem;
+            font-weight: 700;
+            line-height: 22px;
+            cursor: pointer;
+            display: block;
+            margin: 0;
+            a {
+                text-decoration: none;
+                color: $navbarBg;
+            }
+        }
+    }
+    p.text {
+        margin-top: 30px;
+        font-size: .875rem;
+        line-height: 1.7142857143em;
+        font-weight: 500;
+        color: var(--p-color);
+        a {
+            text-decoration: none;
+            color: $link;
+            font-weight: 700;
+        }
+    }
+    .active-input {
+        label {
+            background: var(--navbar-bg);
+            padding: 0 6px;
+            font-size: 0.7rem;
+            top: -6px;
+            right: 12px;
+        }
+    }
+}
+
+.hash {
+    color: $link !important;
+    margin-right: 4px !important;
+}
+
+.open {
+    margin: -2px 0 !important;
+    overflow-y: hidden !important;
+    max-height: 500px !important;
+    padding: 15px 40px 15px 0 !important;
+}
+.open-plus {
+    display: block !important;
+}
+
+// Upload Avatar
+// .upload-container {
+//     text-align: center;
+//     background-color: #2b2b3b;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+//     overflow: hidden;
+//     width: 400px;
+//   }
+  
+  
+  .upload-zone {
+    background: #FFF;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    height: 210px;
+    margin: 0 auto 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon-parent {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin: auto;
+        line-height: 50px;
+        transition: all 0.3s ease-in-out;
+        svg {
+            height: 30px;
+            width: 30px;
+            fill: #adafca;
+            transition: all 0.3s ease-in-out;
+            margin-bottom: 15px;
+        }
+    }
+  }
+  
+  .upload-text {
+    padding: 25px;
+    margin-top: -15px;
+  }
+
+  .upload-zone p {
+    margin: 0;
+  }
+  
+  .upload-zone span {
+    font-size: 0.8rem;
+    color: #a1a1b3;
+    span {
+        font-family: "Poppins";
+    }
+  }
+  
+  .separator {
+    margin: 10px 0;
+    color: #a1a1b3;
+    font-size: 0.9rem;
+  }
+  
+  .paste-url {
+    padding: 10px;
+    background-color: #2b2b3b;
+    border: 1px solid #5c5c7a;
+    border-radius: 5px;
+    color: #e8e8ec;
+    width: 90%;
+    font-size: 0.9rem;
+    outline: none;
+    margin: 10px auto 20px auto;
+    display: block;
+    text-align: center;
+  }
+  
+  
+  .upload-zone img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+  }
+  
+  .upload-zone.dragover {
+    background-color: #421765;
+    border-color: #00acc1;
+  }
+  
+      .input-wrap {
+  position: relative;
+      }
+  
+      .load {
+        display: none;
+        position: absolute;
+        top: 50%;
+        right: 30px; 
+        transform: translateY(-50%);
+        background-color: #2b2b3b;
+        color: black;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        cursor: default;
+      }
+  
+  .loader-item{
+      display: inline-block;
+      width: 0.7em;
+      height: 0.7em;
+      color: inherit;
+      vertical-align: middle;
+      pointer-events: none;
+      font-size: 40px;
+      border: 5px solid #4361BA; 
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      animation: 1s loader-animation linear infinite;
+      position: relative;
+  }
+  
+  @keyframes loader-animation {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }

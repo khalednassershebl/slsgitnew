@@ -1,0 +1,778 @@
+.page-card {
+    background-size: cover;
+    border-radius: 24px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 132px;
+    padding: 0 0;
+    box-shadow: 0 0 40px 0 rgba(94,92,154,.06);
+    position: relative;
+    @media (max-width: $max-5) {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .media {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        img {
+            margin-left: 16px;
+            vertical-align: middle;
+        }
+        .media-body {
+            text-align: right;
+            h5 {
+                font-size: 2.3rem;
+                font-weight: 700;
+                margin: 0;
+                margin-top: 10px;
+                letter-spacing: 1px;
+                color: #FFF;
+                span {
+                    margin-left: 10px;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    color: #f9ff00;
+                    letter-spacing: 0;
+                    @media (max-width: $max-5) {
+                        font-size: 1.2rem;
+                    }
+                }
+                @media (max-width: $max-5) {
+                    font-size: 1.75rem;
+                }
+            }
+            p {
+                margin-top: 0px;
+                font-size: 1rem;
+                font-weight: 600;
+                color: #FFF;
+                span {
+                    font-weight: 600;
+                    font-size: .75rem;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    a {
+        position: relative;
+        z-index: 1;
+        text-decoration: none;
+        display: inline-block;
+        height: 45px;
+        border-radius: 14px;
+        background-color: #FFF;
+        color: #3e3f5e;
+        font-size: .8rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 43px;
+        cursor: pointer;
+        transition: background-color .2s ease-in-out,color .2s ease-in-out,border-color .2s ease-in-out,box-shadow .2s ease-in-out;
+        box-shadow: 3px 5px 10px 0 rgba(62,63,94,.2);
+        width: 140px;
+        // @media (max-width: $max-5) {
+        //     margin-top: 16px;
+        // }
+    }
+}
+.page-card-balance {
+    background-color: #095bec !important;
+    background: linear-gradient(-118deg, #4a4dfd, #4dc6ea) !important;
+    // background: linear-gradient(-118deg, rgb(0, 70, 237), rgb(0, 197, 218)) !important;
+}
+.page-card-points {
+    background-color: #74ddec !important;
+    background: linear-gradient(-118deg, #4a4dfd, #4dc6ea) !important;
+    // background: linear-gradient(-118deg, rgb(0, 70, 237), rgb(0, 197, 218)) !important;
+}
+.overlay-balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 24px;
+    min-height: 132px;
+    padding: 0 32px;
+
+}
+.overlay-points {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 24px;
+    min-height: 132px;
+    padding: 0 32px;
+
+}
+
+.overlay-balance-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+    // opacity: 0.09;
+    background: {
+        image: url(../assets/images/Money.png);
+        size: cover;
+        position: 50% 50%;
+    }
+}
+.overlay-points-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+    // opacity: 0.09;
+    background: {
+        image: url(../assets/images/Points.png);
+        size: cover;
+        position: 50% 0%;
+    }
+}
+
+.month-container {
+    .month-container-header {
+        h3 {
+            font-size: 0.9rem;
+            color: var(--p-color);
+            font-weight: 700;
+            text-align: right;
+            margin: 5px 5px 25px 0;
+        }
+    }
+    .month-card {
+        background: var(--navbar-bg);
+        padding: 20px 20px;
+        border-radius: 14px;
+        margin-bottom: 12px;
+        a {
+            text-decoration: none;
+        }
+        .month-title {
+            // display: flex;
+            // align-items: center;
+            .month-num {
+                background: #151521;
+                color: #FFF;
+                font-size: 1.8rem;
+                font-weight: 700;
+                height: 150px;
+                width: 100%;
+                border-radius: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 15px;
+                margin-bottom: 15px;
+                flex: none;
+                line-height: 60px;
+                background: {
+                    size: cover;
+                    repeat: no-repeat;
+                    position: center center;
+                };
+                span {
+                    font-family: "Poppins";
+                    font-weight: 700;
+                    margin-top: 3px;
+                }
+            }
+            .month-text {
+                margin-right: 5px;
+                h3 {
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    margin: 0;
+                    color: var(--p-color);
+                    text-align: right;
+                }
+                p {
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    margin: 0;
+                    text-align: right;
+                    color: #adafca;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+        .month-numbers {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0 0 0;
+            margin-top: 20px;
+            .month-num-part {
+                background: var(--body-bg);
+                border: 1px solid var(--border-color);
+                padding: 3px 15px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    color: var(--p-color);
+                    height: 16px;
+                    width: 16px;
+                }
+                .month-num-part-num {
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                    margin-top: 2px;
+                }
+                span {
+                    font-weight: 700;
+                    font-size: 1rem;
+                    margin-right: 7px;
+                    color: var(--p-color);
+                }
+                .month-num-part-title {
+                    font-size: 0.7rem;
+                    margin-right: 4px;
+                }
+                @media (max-width: $max-12) {
+                    padding: 2px 8px;
+                    width: 100%;
+                    margin: 0 5px;
+                    svg {
+                        height: 14px;
+                        width: 14px;
+                    }
+                    .month-num-part-num {
+                        font-size: 0.8rem;
+                    }
+                    span {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+        .course-progress {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 18px;
+            margin-top: 17px;
+            padding-bottom: 0px;
+            .course-persentage {
+                font-weight: 700;
+                font-size: 0.8rem;
+                margin: 0 0 0 10px;
+                color: var(--p-color);
+            }
+            .progress {
+                background: var(--body-bg);
+                height: 4px;
+                width: 100%;
+                position: relative;
+                border-radius: 20px;
+                .inner-progress {
+                    background: linear-gradient(-118deg, rgb(0, 70, 237), rgb(0, 197, 218)) !important;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 2;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                }
+            }
+            .course-score {
+                p {
+                    margin: 0 10px 0 0;
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                    color: var(--p-color);
+                }
+            }
+        }
+    }
+    .month-card-register {
+        .month-card-action {
+            a {
+                text-decoration: none;
+                background: linear-gradient(-118deg, #0046ed, #00c5da) !important;
+                width: 100%;
+                margin: auto;
+                color: #FFF;
+                // background-color: #6e56e5;
+                display: inline-block;
+                height: 40px;
+                border-radius: 8px;
+                font-size: 0.7rem;
+                font-weight: 700;
+                text-align: center;
+                line-height: 40px;
+                cursor: pointer;
+                margin-top: 15px;
+                transition: background-color .2s ease-in-out,color .2s ease-in-out,border-color .2s ease-in-out,box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+            }
+        }
+    }
+}
+.month-container-v2 {
+    .month-container-header {
+        h3 {
+            font-size: 0.9rem;
+            color: var(--p-color);
+            font-weight: 700;
+            text-align: right;
+            margin: 5px 5px 25px 0;
+        }
+    }
+    .month-card {
+        background: var(--navbar-bg);
+        padding: 20px 20px;
+        border-radius: 14px;
+        margin-bottom: 12px;
+        min-height: 202px;
+        a {
+            text-decoration: none;
+        }
+        .month-title {
+            // display: flex;
+            // align-items: center;
+            .month-num {
+                img {
+                    width: 50px;
+                    margin-bottom: 15px;
+                }
+                span {
+                    font-family: "Poppins";
+                    font-weight: 700;
+                    margin-top: 3px;
+                }
+            }
+            .month-text {
+                margin-right: 5px;
+                h3 {
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    margin: 0;
+                    color: var(--p-color);
+                    text-align: center;
+                }
+                p {
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                    margin: 0;
+                    text-align: center;
+                    color: #adafca;
+                    margin-top: 1px;
+                }
+            }
+        }
+        .course-progress {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 18px;
+            margin-top: 17px;
+            padding-bottom: 0px;
+            .course-persentage {
+                font-weight: 700;
+                font-size: 0.8rem;
+                margin: 0 0 0 10px;
+                color: var(--p-color);
+            }
+            .progress {
+                background: var(--body-bg);
+                height: 4px;
+                width: 100%;
+                position: relative;
+                border-radius: 20px;
+                .inner-progress {
+                    background: linear-gradient(-118deg, rgb(0, 70, 237), rgb(0, 197, 218)) !important;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 2;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                }
+            }
+            .course-score {
+                p {
+                    margin: 0 10px 0 0;
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                    color: var(--p-color);
+                }
+            }
+        }
+    }
+    .month-card-register {
+        .month-card-action {
+            a {
+                text-decoration: none;
+                background: linear-gradient(-118deg, #0046ed, #00c5da) !important;
+                width: 100%;
+                margin: auto;
+                color: #FFF;
+                display: inline-block;
+                height: 35px;
+                border-radius: 50px;
+                font-size: 0.65rem;
+                font-weight: 700;
+                text-align: center;
+                line-height: 35px;
+                cursor: pointer;
+                margin-top: 21px;
+                transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            }
+        }
+    }
+}
+.month-overview {
+    h4 {
+        font-size: 0.85rem;
+        color: var(--p-color);
+        font-weight: 700;
+        text-align: right;
+        margin: 5px 5px 25px 0;
+    }
+    .added-new {
+        padding: 25px 25px 12px 25px;
+        background: var(--navbar-bg);
+        border-radius: 12px;
+        .added-new-container {
+            .month-content-card {
+                background: var(--navbar-bg);
+                border-radius: 0;
+                padding: 20px 0 ;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid var(--border-color);
+                @media (max-width: $max-5) {
+                    display: block;
+                }
+                .month-content-card-title {
+                    text-align: right;
+                    display: flex;
+                    align-items: center;
+                    figure {
+                        height: 40px;
+                        width: 40px;
+                        margin-left: 12px;
+                        border-radius: 8px;
+                        background: {
+                            size: cover;
+                            position: center center;
+                            repeat: no-repeat;
+                        }
+                        margin: 0;
+                    }
+                    .card-icon {
+                        height: 40px;
+                        width: 40px;
+                        margin-left: 12px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #7facff24;
+                        flex: none;
+                        svg {
+                            color: #0050ec;
+                            height: 16px;
+                            width: 16px;
+                        }
+                    }
+                    .month-content-card-info {
+                        .upper-info {
+                            span {
+                                font-size: 0.7rem;
+                                font-weight: 700;
+                                color: #004eeb;
+                            }
+                            .te-name {
+                                font-size: 0.7rem;
+                                font-weight: 700;
+                                color: #8f91ac;
+                            }
+                        }  
+                        h3 {
+                            font-size: 0.8rem;
+                            font-weight: 700;
+                            color: var(--p-color);
+                            margin: 0;
+                        } 
+                    }
+                }
+                .month-date {
+                    text-align: right;
+                    @media (max-width: $max-5) {
+                        padding-right: 50px;
+                    }
+                    h3 {
+                        font-size: 0.75rem;
+                        font-weight: 700;
+                        margin: 0;
+                    }
+                    p{
+                        font-size: 0.7rem;
+                        font-weight: 700;
+                        color: #8f91ac;
+                        margin: 0;
+                    }
+                }
+                .month-content-card-action {
+                    .btn-transparent {
+                        text-decoration: none;
+                        width: 105px;
+                        margin-top: 0;
+                        background-color: transparent;
+                        border: 1px solid #dedeea;
+                        color: #151521c7;
+                        box-shadow: none;
+                        height: 40px;
+                        font-size: .65rem;
+                        line-height: 37px;
+                        display: inline-block;
+                        border-radius: 50px;
+                        font-weight: 700;
+                        text-align: center;
+                        transition: background-color .2s ease-in-out,color .2s ease-in-out,border-color .2s ease-in-out,box-shadow .2s ease-in-out;
+                        &:hover {
+                            background: var(--p-color);
+                            border-color: var(--p-color);
+                            color: #FFF;
+                            text-decoration: none;
+                        }
+                        @media (max-width: $max-5) {
+                            margin-top: 10px;
+                            width: 100%;
+                        }
+                    }
+                    
+                }
+            }
+            .month-content-card:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+    .upcoming {
+        padding: 25px;
+        background: var(--navbar-bg);
+        border-radius: 12px;
+        @media (max-width: $max-9) {
+            margin-top: 12px;
+        }
+        .added-new-container {
+            .month-content-card {
+                background: var(--navbar-bg);
+                border-radius: 0;
+                padding: 10px 0 10px 0;
+                font-size: 0.9rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @media (max-width: $max-5) {
+                    display: block;
+                }
+                .month-content-card-title {
+                    position: relative;
+                    text-align: right;
+                    display: flex;
+                    align-items: center;
+                    figure {
+                        height: 40px;
+                        width: 40px;
+                        margin-left: 12px;
+                        border-radius: 8px;
+                        background: {
+                            size: cover;
+                            position: center center;
+                            repeat: no-repeat;
+                        }
+                        margin: 0;
+                    }
+                    .month-content-card-info {
+                        margin-right: 25px;
+                        .upper-info {
+                            span {
+                                font-size: 0.8rem;
+                                font-weight: 700;
+                                color: var(--p-color);
+                                margin: 0;
+                            }
+                            .te-name {
+                                font-size: 0.7rem;
+                                font-weight: 700;
+                                color: #004eeb;
+                            }
+                        }  
+                        h3 {
+                            font-size: 0.7rem;
+                            font-weight: 700;
+                            color: #8f91ac;
+                        } 
+                    }
+                }
+                .month-date {
+                    text-align: right;
+                    min-width: 75px;
+                    @media (max-width: $max-5) {
+                        padding-right: 23px;
+                    }
+                    h3 {
+                        font-size: 0.75rem;
+                        font-weight: 700;
+                        margin: 0;
+                        color: #004eeb;
+                    }
+                    p{
+                        font-size: 0.7rem;
+                        font-weight: 700;
+                        color: #8f91ac;
+                        margin: 0;
+                    }
+                }
+            }
+            .month-content-card-action {
+                margin-top: 25px;
+                .btn-transparent {
+                    text-decoration: none;
+                    width: 100%;
+                    margin-top: 0;
+                    background-color: transparent;
+                    border: 1px solid #dedeea;
+                    color: #151521c7;
+                    box-shadow: none;
+                    height: 40px;
+                    font-size: .65rem;
+                    line-height: 37px;
+                    display: inline-block;
+                    border-radius: 50px;
+                    font-weight: 700;
+                    text-align: center;
+                    transition: background-color .2s ease-in-out,color .2s ease-in-out,border-color .2s ease-in-out,box-shadow .2s ease-in-out;
+                    &:hover {
+                        background: var(--p-color);
+                        border-color: var(--p-color);
+                        color: #FFF;
+                        text-decoration: none;
+                    }
+                    @media (max-width: $max-5) {
+                        margin-top: 10px;
+                        width: 100%;
+                    }
+                }
+                
+            }
+            .deadline-today  {
+                .deadline {
+                    margin-left: 15px;
+                    height: 100%;
+                    margin-top: 15px;
+                    position: absolute;
+                    p {
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 50%;
+                        border: 1px solid #dedeea;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 0;
+                        span {
+                            height: 5px;
+                            width: 5px;
+                            border-radius: 50%;
+                            background-color: #005aff;
+                        }
+                    }
+                    .line-v {
+                        height: 88%;
+                        width: 1px;
+                        background-color: #005aff;
+                        margin: 5px auto;
+                    }
+                }
+            }
+            .deadline-normal {
+                .deadline {
+                    margin-left: 15px;
+                    height: 100%;
+                    margin-top: 15px;
+                    position: absolute;
+                    p {
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 50%;
+                        border: 1px solid #dedeea;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 0;
+                        span {
+                            height: 5px;
+                            width: 5px;
+                            border-radius: 50%;
+                            background-color: #dedeea;
+                        }
+                    }
+                    .line-v {
+                        height: 88%;
+                        width: 1px;
+                        background-color: #dedeea;
+                        margin: 5px auto;
+                    }
+                }
+            }
+            .deadline-last {
+                .deadline {
+                    margin-left: 15px;
+                    height: 100%;
+                    margin-top: 15px;
+                    position: absolute;
+                    p {
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 50%;
+                        border: 1px solid #dedeea;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 0;
+                        span {
+                            height: 5px;
+                            width: 5px;
+                            border-radius: 50%;
+                            background-color: #dedeea;
+                        }
+                    }
+                    .line-v {
+                        height: 88%;
+                        width: 1px;
+                        background-color: #dedeea;
+                        margin: 5px auto;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+._df_button {
+    padding: 0 !important;
+}

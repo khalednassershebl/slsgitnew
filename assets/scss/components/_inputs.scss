@@ -1,0 +1,120 @@
+.form-group {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    @media (max-width: $max-9) {
+        margin: 10px 0;
+    }
+    label {
+        color: #c1bacd;
+        font-size: 0.8rem;
+        font-weight: 600;
+        // position: absolute;
+        // top: 21px;
+        // right: 20px !important;
+        transition: all .3s ease-in-out;
+        pointer-events: none;
+        display: block;
+        margin: 0;
+        line-height: 1em;
+        letter-spacing: 0 !important;
+    }
+    .form-control {
+        height: 55px;
+        padding: 7px 20px 0 20px;
+        background-color: #f5f4f7;
+        border: unset;
+        color: #3e3f5e;
+        transition: border-color .2s ease-in-out;
+        width: 100%;
+        border-radius: 17px !important;
+        font-size: 0.85rem;
+        font-weight: 600;
+        &:focus {
+            border-color: tomato;
+            box-shadow: none;
+            outline: none;
+        }
+        &::placeholder {
+            color: #cacaca;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+    }
+    select {
+        cursor: pointer;
+    }
+}
+.create-account-btn {
+    text-decoration: none;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    height: 43px;
+    border-radius: 10px;
+    font-size: .7rem;
+    font-weight: 600 !important;
+    text-align: center;
+    line-height: 43px;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+    background-color: #51459e !important;
+    border: 0;
+    svg {
+        height: 18px;
+        margin-left: 2px;
+        path {
+            fill: #FFF;
+        }
+    }
+    &:hover {
+        background-color: #51459e;
+    }
+}
+.form-check {
+    display: flex;
+    margin: 10px 5px 10px 0;
+    input {
+        background-color: #fff;
+        border: 1px solid #dedeea;
+        height: 17px;
+        width: 16px;
+        position: unset;
+        margin: 3px 0 0 5px;
+    }
+    p {
+        color: $iconActive;
+        font-size: .875rem;
+        font-weight: 700;
+        line-height: 22px;
+        cursor: pointer;
+        display: block;
+        margin: 0;
+        a {
+            text-decoration: none;
+            color: $navbarBg;
+        }
+    }
+}
+p.text {
+    margin-top: 30px;
+    font-size: .875rem;
+    line-height: 1.7142857143em;
+    font-weight: 500;
+    color: var(--p-color);
+    a {
+        text-decoration: none;
+        color: $link;
+        font-weight: 700;
+    }
+}
+.active-input {
+    label {
+        padding: 0 6px;
+        font-size: 0.55rem;
+        top: 11px !important;
+        right: 13px !important;
+    }
+}

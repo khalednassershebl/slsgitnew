@@ -1,0 +1,62 @@
+// -----------------
+// -- Light Theme --
+// -----------------
+
+// 1. Main Color
+$mainColor: #51459e;
+// 2. Body Background
+$bodyBg: #f5f8fa;
+// 3. Navbar Background
+$navbarBg: #FFF;
+//4. Black Color
+$p: #2c2f32;
+
+
+
+$iconActive: #2c2f32;
+$iconIdle: #8b88ff;
+$subP: #adafca;
+$link: #51459e;
+$aLight: #FFF;
+$subLight: #fcfcfd;
+$shadow: #5e5c9a0f;
+$border: #eaeaf5;
+$borderInput: #dedeea;
+
+// ///////////////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////////////
+
+// ----------------
+// -- Drak Theme --
+// ----------------
+
+// 1. Main Color
+$mainDarkColor: #51459e;
+// 2.Body Background
+$bodyBgDark: #151521;
+// 3. Navbar Background
+$navbarBgDark: #1e1e2d;
+//4. Black Color
+$pDark: #FFF;
+
+
+$iconActiveDark: #FFF;
+$subPDark: #9aa4bf;
+$shadowDark: #0000000f;
+$borderDark: #2f3749;
+$subDark: #21283b;
+$borderInputDark: #3f485f;
+
+// Fonts
+$mainFontSize: 16px;
+$arabicFont: "cairo";
+
+// Media 
+$min-5: 576px;
+$min-7: 768px;
+$min-9: 992px;
+$min-12: 1200px;
+$max-5: 575.98px;
+$max-7: 767.98px; 
+$max-9: 991.98px; 
+$max-12: 1199.98px; 
