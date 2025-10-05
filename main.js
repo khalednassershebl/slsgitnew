@@ -56,12 +56,12 @@ $(document).ready(function () {
   $(".close-user")
     .parent()
     .on("click", function () {
-      $(".user-container").removeClass("open-user-container");
+      $(".user-container").removeClass("noti-open");
       $(".close-overlay").removeClass("open-over");
     });
 
   $(".user-action").on("click", function () {
-    $(".user-container").toggleClass("open-user-container");
+    $(".user-container").toggleClass("noti-open");
     $(".close-overlay").addClass("open-over");
   });
 
@@ -101,12 +101,12 @@ $(document).ready(function () {
   $(".close-overlay").on("click", function () {
     $(this).removeClass("open-over");
     $(".notification-container").removeClass("noti-open");
+    $(".user-container").removeClass("noti-open");
 
     $(".nav").removeClass("nav-hiddin");
     $(".big-nav").addClass("big-nav-hiddin");
 
     $(".messages-container").removeClass("noti-open");
-    $(".user-container").removeClass("open-user-container");
   });
 
   //----------------------------------------------------------------

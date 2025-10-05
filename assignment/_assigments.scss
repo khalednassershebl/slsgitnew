@@ -389,6 +389,28 @@
         padding: 0;
         margin-bottom: 8px;
     }
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 700 !important;
+        margin-bottom: 25px !important;
+    }
+    .finish {
+        border-radius: 50px;
+        border: 0;
+        box-shadow: none;
+        outline: none;
+        background: #615dfa;
+        padding: 3px 20px;
+        height: 35px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: #FFF;
+        cursor: pointer;
+        margin-right: auto;
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
     .spacial p {
         color: #111;
         font-size: 18px;
@@ -429,9 +451,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid #eaeaf5;
-    padding: 25px 0 0 0;
-    margin-top: 25px;
     h6 {
         font-size: 0.9rem;
         font-weight: 700;
@@ -443,5 +462,50 @@
         background: #2ae99e ;
         padding: 3px 10px;
         border-radius: 50px;
+    }
+}
+.danger {
+        span {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #FFF;
+        background: #ee4266;
+        padding: 3px 10px;
+        border-radius: 50px;
+    }
+}
+.primary {
+        span {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #FFF;
+        background: #206fff;
+        padding: 3px 10px;
+        border-radius: 50px;
+    }
+}
+.alert {
+    p {
+        text-align: center;
+        display: block;
+        margin: 0;
+    }
+}
+#popup {
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: #000000;
+    margin: 5px auto 15px auto;
+    text-align: center;
+    width: 325px;
+    border-radius: 50px;
+    color: #FFF;
+    padding: 5px 15px;
+    #countdown {
+        span {
+            margin: 0 5px;
+        }
     }
 }
