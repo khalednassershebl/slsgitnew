@@ -915,7 +915,6 @@ p.text a {
 
 .register {
   position: relative;
-  background-image: url(../assets/images/login.png);
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -4832,7 +4831,6 @@ body .header .user-action {
 @media (max-width: 767.98px) {
   body .header .user-action {
     width: auto;
-    display: none;
   }
 }
 body .header .user-action .user-icon figure {
